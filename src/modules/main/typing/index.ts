@@ -1,0 +1,7 @@
+interface IGetPeopleWatchRepostioryListRequest {
+
+}
+
+interface IGetPeopleWatchRepostioryListResponce {
+    
+}

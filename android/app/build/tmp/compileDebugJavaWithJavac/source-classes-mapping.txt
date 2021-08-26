@@ -1,0 +1,14 @@
+com/testwork/MainApplication.java
+ com.testwork.MainApplication
+ com.testwork.MainApplication$1
+com/testwork/ReactNativeFlipper.java
+ com.testwork.ReactNativeFlipper
+ com.testwork.ReactNativeFlipper$1
+ com.testwork.ReactNativeFlipper$2
+ com.testwork.ReactNativeFlipper$2$1
+com/testwork/MainActivity.java
+ com.testwork.MainActivity
+com/testwork/BuildConfig.java
+ com.testwork.BuildConfig
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList

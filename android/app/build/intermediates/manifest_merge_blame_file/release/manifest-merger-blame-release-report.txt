@@ -1,0 +1,97 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.testwork"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:4:5-67
+11-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:4:22-64
+12
+13    <application
+13-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:6:5-42:19
+14        android:name="com.testwork.MainApplication"
+14-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:7:7-38
+15        android:allowBackup="false"
+15-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:11:7-34
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.1.0] C:\Users\Владислав\.gradle\caches\transforms-2\files-2.1\d67cd79abd1ca209502f51c69d23182b\core-1.1.0\AndroidManifest.xml:24:18-86
+17        android:icon="@mipmap/ic_launcher"
+17-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:9:7-41
+18        android:label="@string/app_name"
+18-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:8:7-39
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:10:7-52
+20        android:theme="@style/AppTheme"
+20-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:12:7-38
+21        android:usesCleartextTraffic="true" >
+21-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:13:7-42
+22        <activity
+22-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:14:5-23:16
+23            android:name="com.testwork.MainActivity"
+23-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:15:7-35
+24            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+24-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:16:7-84
+25            android:exported="true"
+25-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:19:7-30
+26            android:label="@string/app_name"
+26-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:17:7-39
+27            android:launchMode="singleTask"
+27-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:20:7-38
+28            android:windowSoftInputMode="adjustResize" >
+28-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:18:7-49
+29
+30            <!-- ⚠️ add android:exported="true" and android:launchMode="singleTask" above -->
+31            <!-- remove the <intent-filter> from .MainActivity -->
+32        </activity>
+33        <activity
+33-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:25:5-41:16
+34            android:name="com.zoontek.rnbootsplash.RNBootSplashActivity"
+34-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:26:7-67
+35            android:launchMode="singleTask"
+35-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:28:7-38
+36            android:theme="@style/BootTheme" >
+36-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:27:7-39
+37            <intent-filter>
+37-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:29:7-32:23
+38                <action android:name="android.intent.action.MAIN" />
+38-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:30:9-61
+38-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:30:17-58
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:31:9-69
+40-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:31:19-66
+41            </intent-filter>
+42
+43            <!-- add your deep linking instructions inside the RNBootSplashActivity declaration -->
+44            <intent-filter>
+44-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:35:7-40:23
+45                <action android:name="android.intent.action.VIEW" />
+45-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:36:9-61
+45-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:36:17-58
+46
+47                <category android:name="android.intent.category.DEFAULT" />
+47-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:37:9-68
+47-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:37:19-65
+48                <category android:name="android.intent.category.BROWSABLE" />
+48-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:38:9-70
+48-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:38:19-67
+49
+50                <data android:scheme="YOUR APP SCHEME" /> <!-- replace this with your custom scheme -->
+50-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:39:9-50
+50-->D:\Work1\react-native-mobile-app\android\app\src\main\AndroidManifest.xml:39:15-47
+51            </intent-filter>
+52        </activity>
+53        <activity android:name="com.masteratul.exceptionhandler.DefaultErrorScreen" >
+53-->[:react-native-exception-handler] D:\Work1\react-native-mobile-app\node_modules\react-native-exception-handler\android\build\intermediates\library_manifest\release\AndroidManifest.xml:12:9-13:20
+53-->[:react-native-exception-handler] D:\Work1\react-native-mobile-app\node_modules\react-native-exception-handler\android\build\intermediates\library_manifest\release\AndroidManifest.xml:12:19-84
+54        </activity>
+55    </application>
+56
+57</manifest>
