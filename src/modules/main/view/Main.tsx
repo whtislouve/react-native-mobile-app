@@ -54,8 +54,8 @@ export class Main extends PureComponent<IProps & IState & IDispatchProps & IStat
 
   state = {
     peopleWatchRepostioryList: [],
-    timer: 0,
-    counter: 0
+    timer: 1,
+    counter: 1
   }
 
   async componentDidMount() {
@@ -77,12 +77,16 @@ export class Main extends PureComponent<IProps & IState & IDispatchProps & IStat
   tick = () => {
     this.setState({
       counter: this.state.counter + 1
+    }, async () => {
+      if(this.state.counter % 60 == 0) {
+        await this.getPeopleWatchRepostioryInfo()
+      }
     })
   }
 
   goToDetailsHandler = (personDetailInfo: Object) => {
     clearInterval(this.state.timer)
-    this.setState({ counter: 0, timer: 0 }, () => this.props.navigation.navigate(ListPages.Details, { personDetailInfo }))
+    this.setState({ counter: 1, timer: 1 }, () => this.props.navigation.navigate(ListPages.Details, { personDetailInfo }))
   }
 
   getPeopleWatchRepostioryInfo = async () => {
@@ -92,6 +96,7 @@ export class Main extends PureComponent<IProps & IState & IDispatchProps & IStat
   // convertData = (getPeopleWatchRepostioryList: )
 
   render(): JSX.Element {
+
     if (this.props.isLoading) {
       return (
         <Loader />
